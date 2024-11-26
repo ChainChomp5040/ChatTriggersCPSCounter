@@ -1,7 +1,0 @@
-{
-    "name": "CPSCounter",
-    "creator": "ChainChomp5040",
-    "description": "really bad cps counter",
-    "version": "1.4.0",
-    "entry": "index.js"
-  }
