@@ -1,3 +1,4 @@
+//change fun from true to false to disable "fun" features
 var fun = true
 var rng1 = 69
 
