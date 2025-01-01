@@ -134,3 +134,23 @@ register("chat", (message, chat , player, event) => {
 register("chat", (message, chat , player, event) => {
   rs()
 }).setCriteria("reaper scythe sucks").setContains();
+
+register("chat", (message, chat , player, event) => {
+  rs()
+}).setCriteria("rs sucks").setContains();
+
+
+
+register("chat", (message, chat , player, event) => {
+  ChatLib.command("pc Bonzo Mask Popped")
+}).setCriteria("Your Bonzo's Mask saved your life!").setContains();
+
+
+register("chat", (message, chat , player, event) => {
+  ChatLib.command("pc Phoenix Pet Popped")
+}).setCriteria("Your Phoenix Pet saved you from certain death!").setContains();
+
+
+register("chat", (message, chat , player, event) => {
+  ChatLib.command("pc Spirit Mask Popped")
+}).setCriteria("Second Wind Activated! Your Spirit Mask saved your life!").setContains();
