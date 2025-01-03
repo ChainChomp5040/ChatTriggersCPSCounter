@@ -145,6 +145,10 @@ register("chat", (message, chat , player, event) => {
   ChatLib.command("pc Bonzo Mask Popped")
 }).setCriteria("Your Bonzo's Mask saved your life!").setContains();
 
+register("chat", (message, chat , player, event) => {
+  ChatLib.command("pc Bonzo Mask Popped")
+}).setCriteria("Your ⚚ Bonzo's Mask saved your life!").setContains();
+
 
 register("chat", (message, chat , player, event) => {
   ChatLib.command("pc Phoenix Pet Popped")
@@ -154,3 +158,7 @@ register("chat", (message, chat , player, event) => {
 register("chat", (message, chat , player, event) => {
   ChatLib.command("pc Spirit Mask Popped")
 }).setCriteria("Second Wind Activated! Your Spirit Mask saved your life!").setContains();
+
+register("chat", (message, chat , player, event) => {
+  ChatLib.command("pc Spirit Mask Popped")
+}).setCriteria("Second Wind Activated! Your ⚚ Spirit Mask saved your life!").setContains();
