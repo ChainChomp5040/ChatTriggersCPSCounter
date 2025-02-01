@@ -1,5 +1,7 @@
 //change fun from true to false to disable "fun" features
 var fun = true
+//change bonzomsgs from true to false to disable bonzo/spirit/phoenix msgs
+var bonzomsgs = true
 var rng1 = 69
 
 
@@ -67,6 +69,14 @@ function baldsoul() {
     }, 500);
 }
 
+function pkickoffline() {
+  ChatLib.command("party kickoffline")
+}
+
+function plist() {
+  ChatLib.command("party list")
+}
+
 
 
 register("messageSent", (message, event) => {
@@ -91,6 +101,21 @@ register("chat", (message, chat , player, event) => {
 register("chat", (message, chat , player, event) => {
   ChatLib.command("sendcoords")
 }).setCriteria("!sc").setContains();
+
+
+register("chat", (message, chat , player, event) => {
+  pkickoffline()
+}).setCriteria("!pkickoffline").setContains();
+
+
+register("chat", (message, chat , player, event) => {
+  plist()
+}).setCriteria("!pl").setContains();
+
+register("chat", (message, chat , player, event) => {
+  plist()
+}).setCriteria("!plist").setContains();
+
 
 
 register("chat", (message, chat , player, event) => {
@@ -142,23 +167,28 @@ register("chat", (message, chat , player, event) => {
 
 
 register("chat", (message, chat , player, event) => {
-  ChatLib.command("pc Bonzo Mask Popped")
+  if (bonzomsgs === true)
+    ChatLib.command("pc Bonzo Mask Popped")
 }).setCriteria("Your Bonzo's Mask saved your life!").setContains();
 
 register("chat", (message, chat , player, event) => {
-  ChatLib.command("pc Bonzo Mask Popped")
+  if (bonzomsgs === true)
+    ChatLib.command("pc Bonzo Mask Popped")
 }).setCriteria("Your ⚚ Bonzo's Mask saved your life!").setContains();
 
 
 register("chat", (message, chat , player, event) => {
-  ChatLib.command("pc Phoenix Pet Popped")
+  if (bonzomsgs === true)
+    ChatLib.command("pc Phoenix Pet Popped")
 }).setCriteria("Your Phoenix Pet saved you from certain death!").setContains();
 
 
 register("chat", (message, chat , player, event) => {
-  ChatLib.command("pc Spirit Mask Popped")
+  if (bonzomsgs === true)
+    ChatLib.command("pc Spirit Mask Popped")
 }).setCriteria("Second Wind Activated! Your Spirit Mask saved your life!").setContains();
 
 register("chat", (message, chat , player, event) => {
-  ChatLib.command("pc Spirit Mask Popped")
+  if (bonzomsgs === true)
+    ChatLib.command("pc Spirit Mask Popped")
 }).setCriteria("Second Wind Activated! Your ⚚ Spirit Mask saved your life!").setContains();
