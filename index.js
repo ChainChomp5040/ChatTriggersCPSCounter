@@ -169,12 +169,7 @@ register("chat", (message, chat , player, event) => {
 register("chat", (message, chat , player, event) => {
   if (bonzomsgs === true)
     ChatLib.command("pc Bonzo Mask Popped")
-}).setCriteria("Your Bonzo's Mask saved your life!").setContains();
-
-register("chat", (message, chat , player, event) => {
-  if (bonzomsgs === true)
-    ChatLib.command("pc Bonzo Mask Popped")
-}).setCriteria("Your ⚚ Bonzo's Mask saved your life!").setContains();
+}).setCriteria("Bonzo's Mask saved your life!").setContains();
 
 
 register("chat", (message, chat , player, event) => {
@@ -186,9 +181,4 @@ register("chat", (message, chat , player, event) => {
 register("chat", (message, chat , player, event) => {
   if (bonzomsgs === true)
     ChatLib.command("pc Spirit Mask Popped")
-}).setCriteria("Second Wind Activated! Your Spirit Mask saved your life!").setContains();
-
-register("chat", (message, chat , player, event) => {
-  if (bonzomsgs === true)
-    ChatLib.command("pc Spirit Mask Popped")
-}).setCriteria("Second Wind Activated! Your ⚚ Spirit Mask saved your life!").setContains();
+}).setCriteria("Spirit Mask saved your life!").setContains();
